@@ -13,7 +13,7 @@ public class logicChessData
         "-w.|The one thing I struck on was Mssngv Wls. The first module was obviously Painting, which rules out A and I.",
         "-w.|The second module must've been Meteor, which rules out E and O. That means the missing vowel is U.",
         "-w.|The missing hieroglyph was Lion, and therefore Two Reeds must've been right, but it wasn't.",
-        "-w.|After that I just started guessing as it was there was only one other module left.",
+        "-w.|After that I just started guessing as there was only one other module left.",
         "+w.|I believe I understand your situation now, thank you for sharing that.",
         "-w_142017|Wait... did I really say all that out loud? I thought all of that was in my head.|bbb|bnr|Are you sure that there was 'Painting'?|Are you sure that there was 'Meteor'?|Are you sure you identified the right module?",
         "+w,|Ivy Rene, you claim that the first module name that appeared was Painting, correct?",
