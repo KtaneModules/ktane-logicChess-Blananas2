@@ -68,8 +68,9 @@ public class logicChessScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         AllOptButtons.SetActive(false);
+        StatusLight.transform.localPosition = 0.03125f * Vector3.down;
+        GetComponent<KMSelectable>().UpdateChildren();
         caseIx = UnityEngine.Random.Range(0,9);
-
         ChooseCase(caseIx);
         opponentsName = caseData[0].Split('|')[0];
         chosenPerson = int.Parse(caseData[0].Split('|')[1]);
@@ -107,6 +108,7 @@ public class logicChessScript : MonoBehaviour {
     void ShowShit () { //ASSUMES CURRENTDATA IS CORRECT!!!
         restart = 0;
         AllOptButtons.SetActive(false);
+        GetComponent<KMSelectable>().UpdateChildren();
         ButtonTexts[1].text = "▶";
         //Array.Clear(currentData, 0, currentData.Count());
 
@@ -312,6 +314,7 @@ public class logicChessScript : MonoBehaviour {
                         case 2: IndivOptButtons[0].SetActive(true); IndivOptButtons[1].SetActive(true); IndivOptButtons[2].SetActive(false); Debug.LogFormat("[Logic Chess #{0}] ({1}) ({2})", moduleId, currentData[4], currentData[5]); break;
                         case 3: IndivOptButtons[0].SetActive(true); IndivOptButtons[1].SetActive(true); IndivOptButtons[2].SetActive(true); Debug.LogFormat("[Logic Chess #{0}] ({1}) ({2}) ({3})", moduleId, currentData[4], currentData[5], currentData[6]); break;
                     }
+                    GetComponent<KMSelectable>().UpdateChildren();
                     ButtonTexts[1].text = " ";
                     MainText.text = " ";
                     PersonText.text = " ";
@@ -327,10 +330,15 @@ public class logicChessScript : MonoBehaviour {
                 break;
             case 3:
                 GetComponent<KMBombModule>().HandlePass();
-                PrettyMuchEverything.SetActive(false);
-                ModuleShapes[0].SetActive(true);
-                ModuleShapes[1].SetActive(false);
-                StatusLight.transform.localPosition = new Vector3(0.075167f, 0.01986f, 0.076057f);
+                if (caseIx == 7)
+                    StartCoroutine(KanyeFade());
+                else
+                {
+                    PrettyMuchEverything.SetActive(false);
+                    ModuleShapes[0].SetActive(true);
+                    ModuleShapes[1].SetActive(false);
+                    StatusLight.transform.localPosition = new Vector3(0.075167f, 0.01986f, 0.076057f);
+                }
                 Debug.LogFormat("[Logic Chess #{0}] Module solved.", moduleId);
             break;
             default: Debug.Log("Dipshit alert!!!"); break;
@@ -354,6 +362,25 @@ public class logicChessScript : MonoBehaviour {
         }
         scrolling = false;
         ButtonTexts[1].text = "▶";
+    }
+    IEnumerator KanyeFade()
+    {
+        Sprites[1].gameObject.SetActive(true);
+        Sprites[1].sprite = Sprites[1].sprite = PeopleSprites[7];
+        MainText.text = string.Empty;
+        float delta = 0f;
+        while (delta < 1)
+        {
+            delta += 0.33f * Time.deltaTime;
+            Sprites[1].color = Color.Lerp(Color.white, Color.clear, delta);
+            yield return null;
+        }
+        StartCoroutine(TextScroll("(What just happened?)"));
+        yield return new WaitForSeconds(2);
+        PrettyMuchEverything.SetActive(false);
+        ModuleShapes[0].SetActive(true);
+        ModuleShapes[1].SetActive(false);
+        StatusLight.transform.localPosition = new Vector3(0.075167f, 0.01986f, 0.076057f);
     }
     
     /// WORDWRAP CODE, Credit goes to ICR and Rapptz on StackExchange
@@ -415,4 +442,55 @@ public class logicChessScript : MonoBehaviour {
     }
 
     /// END OF WORDWRAP CODE
+
+    //TP time :))))
+    #pragma warning disable 414
+    private readonly string TwitchHelpMessage = @"Use <!{0} next> to go to the next page. Use <!{0} option 1/2/3> to choose that option if applicable. Use <!{0} skip> to skip until an option is presented. Use <!{0} rewind> to go back to the start of the module.";
+#pragma warning restore 414
+
+    IEnumerator ProcessTwitchCommand(string command)
+    {
+        command = command.Trim().ToUpperInvariant();
+        if (command == "NEXT")
+        {
+            yield return null;
+            if (scrolling)
+            {
+                Buttons[1].OnInteract();
+                yield return new WaitForSeconds(0.1f);
+            }
+            Buttons[1].OnInteract();
+        }
+        else if (command == "REWIND")
+        {
+            yield return null;
+            while (casePointer != 0)
+            {
+                Buttons[0].OnInteract();
+                yield return new WaitForSeconds(0.2f);
+            }
+        }
+        else if (command == "SKIP")
+        {
+            yield return null;
+            while (!showingButtons)
+            {
+                Buttons[1].OnInteract();
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+        else if (Regex.IsMatch(command, @"^OPTION\s[1-3]$"))
+        {
+            int option = command.Last() - '1';
+            if (!showingButtons)
+                yield return "sendtochaterror The buttons cannot be interacted with at this time.";
+            else if (!IndivOptButtons[option].activeSelf)
+                yield return "sendtochaterror The supplied button cannot be interacted with at this time.";
+            else
+            {
+                yield return null;
+                Buttons[option + 2].OnInteract();
+            }
+        }
+    }
 }
