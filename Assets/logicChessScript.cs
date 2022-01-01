@@ -70,7 +70,8 @@ public class logicChessScript : MonoBehaviour {
         AllOptButtons.SetActive(false);
         StatusLight.transform.localPosition = 0.03125f * Vector3.down;
         GetComponent<KMSelectable>().UpdateChildren();
-        caseIx = UnityEngine.Random.Range(0,9);
+        caseIx = UnityEngine.Random.Range(0,17);
+        caseIx = 11; //REMOVE THIS LINE
         ChooseCase(caseIx);
         opponentsName = caseData[0].Split('|')[0];
         chosenPerson = int.Parse(caseData[0].Split('|')[1]);
@@ -82,15 +83,23 @@ public class logicChessScript : MonoBehaviour {
 
     void ChooseCase (int c) {
         switch (c) {
-            case 0: caseData = logicChessData.Case0; break;
-            case 1: caseData = logicChessData.Case1; break;
-            case 2: caseData = logicChessData.Case2; break;
-            case 3: caseData = logicChessData.Case3; break;
-            case 4: caseData = logicChessData.Case4; break;
-            case 5: caseData = logicChessData.Case5; break;
-            case 6: caseData = logicChessData.Case6; break;
-            case 7: caseData = logicChessData.Case7; break;
-            case 8: caseData = logicChessData.Case8; break;
+            case 0: caseData = logicChessData.BlanMssngvWls; break;
+            case 1: caseData = logicChessData.BlanRoundKeypad; break;
+            case 2: caseData = logicChessData.BlanHeartFMN; break;
+            case 3: caseData = logicChessData.BlanKeypadDirectionality; break;
+            case 4: caseData = logicChessData.BlanIceCream; break;
+            case 5: caseData = logicChessData.BlanTwoBits; break;
+            case 6: caseData = logicChessData.BlanMorsematics; break;
+            case 7: caseData = logicChessData.BlanYellowArrows; break;
+            case 8: caseData = logicChessData.BlanLEDEncryption; break;
+            case 9: caseData = logicChessData.JamieFMN; break;
+            case 10: caseData = logicChessData.AxodeauBombDiffusal; break;
+            case 11: caseData = logicChessData.AxodeauGarnetThief; break;
+            case 12: caseData = logicChessData.AxodeauBafflingBox; break;
+            case 13: caseData = logicChessData.AxodeauRebootingMOS; break;
+            case 14: caseData = logicChessData.UsernameChess; break;
+            case 15: caseData = logicChessData.AxodeauInterpunct; break;
+            case 16: caseData = logicChessData.UsernameCoordination; break;
         }
         Debug.LogFormat("<Logic Chess #{0}> caseIx: {1}", moduleId, c);
     }
@@ -133,7 +142,11 @@ public class logicChessScript : MonoBehaviour {
                     case 9: PersonText.transform.localScale = new Vector3(0.09f, 0.15f, 1f); break;
                     case 10: PersonText.transform.localScale = new Vector3(0.08f, 0.15f, 1f); break;
                     case 11: PersonText.transform.localScale = new Vector3(0.07f, 0.15f, 1f); break;
-                    default: PersonText.transform.localScale = new Vector3(0.06f, 0.15f, 1f); break;
+                    case 12: PersonText.transform.localScale = new Vector3(0.068f, 0.15f, 1f); break;
+                    case 13: PersonText.transform.localScale = new Vector3(0.063f, 0.15f, 1f); break;
+                    case 14: PersonText.transform.localScale = new Vector3(0.058f, 0.15f, 1f); break;
+                    case 15: PersonText.transform.localScale = new Vector3(0.055f, 0.15f, 1f); break;
+                    default: PersonText.transform.localScale = new Vector3(0.051f, 0.15f, 1f); break;
                 }
             }
             edgeworkSpeaking = false;

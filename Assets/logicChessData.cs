@@ -1,6 +1,6 @@
-public class logicChessData
+﻿public class logicChessData
 {
-    public static string[] Case0 = {
+    public static string[] BlanMssngvWls = {
         "Rene|9",
         "+b.|(She seems annoyed at herself.)",
         "-w_02|I can't believe I almost blew up during that bomb.|w|p|What happened exactly?",
@@ -32,7 +32,7 @@ public class logicChessData
         "-w.|Ah shoot, the module was Meter, wasn't it... darn.",
         "+w!|I can confirm the only module it could have been was Meter."
     };
-    public static string[] Case1 = {
+    public static string[] BlanRoundKeypad = {
         "ROB|1",
         "-w.|Hey Mr. Edgework!",
         "+b_02|(ROB is nice, almost too nice. I wonder what he wants.)|w|p|What's up?",
@@ -67,7 +67,7 @@ public class logicChessData
         "*w.|Happy to help, ROB.",
         "*b!|(That manual is somewhat ambiguous but it's so old I think we'll cut the manual some slack...)"
     };
-    public static string[] Case2 = {
+    public static string[] BlanHeartFMN = {
         "Kokoro|4",
         "-w_01|Yo.|w|p|What's up?",
         "*w.|How's it going?",
@@ -98,7 +98,7 @@ public class logicChessData
         "-w!|I'll make sure to keep an eye on The Heart next time."
     };
 
-    public static string[] Case3 = {
+    public static string[] BlanKeypadDirectionality = {
         "Interpret|2",
         "*b.|(Oh, it's Mr. Interpret.)",
         "-w_02|Hi, Mr. Edgework. Can I ask you about something that happened to me recently?|w|p|Of course!",
@@ -137,7 +137,7 @@ public class logicChessData
         "*b!|(He doesn't need to look down at the keyboard much to begin with.)"
     };
 
-    public static string[] Case4 = {
+    public static string[] BlanIceCream = {
         "Min|6",
         "*w.|Hello there.",
         "-w_02|Oh hey, I've heard of you before. You're Mr. Edgework, right?|w|p|Indeed I am.",
@@ -179,7 +179,7 @@ public class logicChessData
         "-w!|It's alright."
     };
 
-    public static string[] Case5 = {
+    public static string[] BlanTwoBits = {
         "Zebe|5",
         "-w_01|He-- Hello?|w|p|Hello.",
         "*w.|Hi there, how's it going?",
@@ -219,7 +219,7 @@ public class logicChessData
         "*w!|No problemo."
     };
 
-    public static string[] Case6 = {
+    public static string[] BlanMorsematics = {
         "Well|3",
         "-w_01|Hello Mr. Edgework.|w|p|Hey there, how's it going?",
         "*w.|Hey there, how's it going?",
@@ -262,7 +262,7 @@ public class logicChessData
         "*w!|People make that mistake all the time."
     };
 
-    public static string[] Case7 = {
+    public static string[] BlanYellowArrows = {
         "West|7",
         "*w.|Woah, is that who I think it is?!",
         "-w_02|Yes, it is who you think it is.|w|n|What do you need?",
@@ -299,7 +299,7 @@ public class logicChessData
         "*b!|(Sounding so professional... I should try that.)"
     };
 
-    public static string[] Case8 = {
+    public static string[] BlanLEDEncryption = {
         "Wiohgi|8",
         "*b.|(Hmmm what do I do-- wait a minute, is that banging on my door?)",
         "*w.|COME ON IN!!!",
@@ -328,4 +328,396 @@ public class logicChessData
         "-w.|Okay it says we completed the bomb in 17 minutes and 41 seconds.",
         "*b!|(Wait a minute, does that mean the bomb was in Zen mode?)"
     };
+
+    public static string[] JamieFMN = {
+        "Blimp|4",
+		"-w.|Huh?",
+		"-w.|Why was that wrong?",
+		"-w.|Uh, Mr Edgework? Can you take a look at this?",
+		"+b_04|(This is the fourth time Blimp's asked me today, what now?)|w|p|What's the problem?",
+		"-w.|Ok, so I was learning Forget Me Not and I pressed the first 4 digits correctly.",
+		"-w.|Then, I got the 5th stage wrong.",
+		"+w.|No point just telling me that it was wrong, what did you do for that stage?",
+		"-w.|...I was literally about to tell you.",
+		"-w.|I submitted 4858 so far, and the displayed digit was a 5 for that stage.",
+		"-w.|There are no zeros in the previous two and there aren't two even numbers, so I add the previous two digits together.",
+		"-w.|After that you take the least significant digit and add the displayed digit, which should give me 8, but it wanted 6.",
+		"+w_121619|Hmmm, yeah I see what happened.|rww|qbn|The module is bugged.|You need to subtract the displayed digit.|You need to take the most significant digit.",
+		"-w,|Wh- It's bugged?",
+		"-w,|You're telling me this mod that's been out for 4 years is bugged?",
+		"-w,|4 YEARS?",
+		"+bX11|(Oh hold on let me think about this again, there's no way that it's bugged after all this time.)",
+		"+w,|Yeah, I see, you are supposed to subtract the displayed digit instead of add.",
+		"-w,|Ok, so that means I need to do 8 + 5 - 5, which gives me, What? That still doesn't give me the right answer?",
+		"+bX11|(Coming to think of that, I'm pretty sure I remembered the rules wrong, I may need to get more sleep.)",
+		"+w.|Yeah, I see, you need to take the most significant digit instead of the least.",
+		"-w.|Wait, what? What does that mean?",
+		"+w.|Most significant just means the first digit, so the sum of 8 + 5 is 13, and the most significant digit is 1.",
+		"-w.|So I add this 1 to the 5, which gives me- Ohhhhh!",
+		"+b!|(This rule used to always trip me up, but I'm glad I remembered it properly this time.)"
+    };
+	
+/*	public static string[] MehCornflowerButton = {
+		"Craft|5",
+		"-w_0401|Hey there, Mr. Edgework.|bb|pq|Hey.|GET OUT OF MY FACE, JERK",
+		"+w,|GET OUT OF MY FACE, JERK",
+		"-w,|What in the world is wrong with you..?",
+		"+bX00|(I'm losing myself...)",
+		"+w.|Hey.",
+		"-w_06|So I've been learning a bunch of new mods lately...and there's this one module I was very confused on.|w|r|What mod is it?",
+		"+w.|What's this module that made you confused?",
+		"-w.|Shameful to say...The Cornflower Button.",
+		"+b.|(Ah, one of the button modules. The Cornflower button shouldn't be that big of a deal if you had watched the tutorial...)",
+		"+w.|Which part are you confused on exactly?",
+		"-w.|Well, okay. It was the switching highlighted pivots part, about the hovering selectable thingy.",
+		"-w.|I ran a bomb, and just as the manual suggested, I hovered the selectable pointed by the arrow and deselected it, and guess what?",
+		"-w.|The highlighted arrows didn't change at all!",
+		"+b_142017|(Hm...weird indeed, but I don't think I have enough information to deduce what's going on.)|bbb|kqb|Could you give me the edgework of the bomb?|What modules are there in the bomb?|Could you give me the colours in the display?",
+		"+w,|What's the edgework of the bomb?",
+		"-w,|Why do you need the edgework? The module doesn't even need edgework, if I understood correctly.",
+		"+bX11|(Ah yeah...)",
+		"+w,|What are the colours on the bottom display of the button?",
+		"-w,|Uh...Mr. Edgework, we're talking about Cornflower Button here.",
+		"+bX11|(Why did my mind drift off to The Yellow Button instead?)",
+		"+w.|What modules do you have on the bomb?",
+		"-w.|Hold on, let me grab the log.",
+		"-w.|Hmm...besides The Cornflower button, I also have Painting, Simon Subdivides, Standard Crazy Talk, Antistress, Deaf Alley...",
+		"-w.|...Art Appreciation, and Quizbowl on the bomb.",
+		"+w.|Do you still remember where is the arrow pointing to?",
+		"-w.|I think it points to one of Subdivides' buttons, but I tried it on the button and nothing happened.",
+		"-w.|Come to think of it, the arrow itself is sort of moving in its own though...",
+		"+b_283237|(Wait, does that mean...)|bbb|bnr|You should press the selected button.|You did not deselect correctly.|The arrow isn't pointing to the button.",
+		"+w,|Yeah, you definitely should press the pointed button instead.",
+		"-w,|...Mr. Edgework, not to be rude, but have you read the manual? It clearly states to only highlight the selectable, not press it.",
+		"+b,|(Ah, and pressing the button would most probably incur a strike on the bomb too, we ain't dealing with Button Messer here.)",
+		"+bX27|(Oh crap, I feel so embarrassed...)",
+		"+w,|Are you sure you deselected the module correctly?",
+		"-w,|...What are you talking about?",
+		"+w,|Well, you know, highlight the selectable, and deselect it.",
+		"-w,|I'm pretty sure I did that correctly, I did it a million times and it still won't work!",
+		"+bX27|(Oops...)",
+		"+w.|Before we continue on, can I confirm Quizbowl's location on the bomb?",
+		"-w.|Let's see...it's located in the top left, directly above the timer.",
+		"+w.|And let me guess, is the Cornflower Button located in the face directed opposite to where the Timer is?",
+		"-w.|How did you know that?",
+		"+w.|Then that explains it. The Cornflower button isn't pointing to Subdivides' button.",
+		"+w.|In fact, I doubt that it points to anything on the bomb at all. All others but Quizbowl are modules ignored by Cornflower Button.",
+		"-w.|Ah, so which means...",
+		"+w.|That's right, the module is actually pointing to the alarm clock instead.",
+		"-w.|Makes sense! Thank you Mr. Edgework!",
+		"+w!|Anytime, man."
+	}; */
+	
+	public static string[] AxodeauBombDiffusal = {
+		"Axodeau|5",
+		"-w.|Hey, Edgework!",
+		"+w.|Oh, hello there.",
+		"-w.|I struck on Bomb Diffusal earlier, but I have no idea what I did wrong...",
+		"+w_0417|Okay...|br|pn|Tell me the read|Let me telepathically work it out.",
+		"+w.|What was the serial number and license number?",
+		"-w.|Serial was AV5QL7, license number was 4L41TY.",
+		"+w.|Right, and what numbers did you get out of the table?",
+		"-w.|194935",
+		"+w.|Yep, I agree with that.",
+		"-w.|So, the destination is Space, right? Since the 9s cancel out, leaving the 5 at the end to be the largest.",
+		"+w.|Mhmm...",
+		"-w.|Taking the first 2 numbers modulo 5 is 14, which is Io.",
+		"+w_191322|Okay, I think I've found the problem|bbb|pbn|You use the 2nd and 3rd digits|You're meant to reverse the license number|14 isn't Io",
+		"+w.|\"If the delivery destination is space, reverse the delivery number for the next step...\"",
+		"-w.|Ooooh. Setting it to Jupiter (03)... Yep, module solved now. Thankfully the rest was right though.",
+		"+w.|Alright, good job on the rest of it.",
+		"+b!|Always read through a manual to spot any fine prints. They could be what is causing you to strike.",
+		"-w,|Are you kidding me? I could literally just tell you the read.",
+		"+wX04|Oh, right, yeah, good point.",
+		"+w,|You have to use the 2nd and 3rd digits of the resulting number.",
+		"-w,|Uhhhh, no you don't, it says first and second.",
+		"+wX12|Oh, yes it does, sorry, my bad.",
+		"+w,|14 isn't Io, it's Europa.",
+		"-w,|... Nope, 14 is Io for sure.",
+		"+wX12|Oh, forgive me for that, Io is most definitely 14, woops..."
+	};
+	
+	public static string[] AxodeauGarnetThief = {
+		"Kaylib|2",
+		"-w.|Edgework... I need some help.",
+		"+w.|Oh, hello there, what module do you need help on?",
+		"-w.|The Garnet Thief.",
+		"+w.|Ok. Who do you have?",
+		"-w.|Kyungran (M), Jinho (M), Junghyun (P), Yeonseung (C), Junseok (C), Yoonsun (P), and Sangmin (B).",
+		"+w.|... Alright, noted all of that down. What condition did you have in the table?",
+		"-w.|No word of a lie, the first one. My serial number was AA1PL1. This is a 1 module bomb by the way, if that helps.",
+		"+w.|Ok, that checks out. Also, yeah, that will be useful.",
+		"-w.|Kyungran, Junseok and Sangmin were lying. They are now Cartel, Mafia and Police respectively.",
+		"+w.|Mmhmm...",
+		"-w.|So, there are now 2 cartel, 2 mafia, and 3 police, right?",
+		"+w.|Mhm.",
+		"-w.|Meaning Police get more than any other faction, but that was wrong.",
+		"+w_262914|Aha, I've worked out what you did wrong.|bbb|pbn|You've got the numbers wrong.|Someone else was also lying.|You're picking a faction as well.",
+		"+w.|You do remember you're picking a faction as well, and you count as an extra member of that faction?",
+		"-w.|... OOOOOOH, that's what I've forgotten.",
+		"-w.|...",
+		"-w.|Wait, they're all the same, what do I pick? Mafia and Cartel have the same lowest amount?!",
+		"+w_323519|Uhhh...|bbb|pbn|Mafia|Cartel|Beggar",
+		"+w.|Neither, it's beggar.",
+		"-w.|Why?",
+		"+w.|Zero claims, which is less than two claims.",
+		"-w.|Oh, I must've thought it didn't count if it wasn't there. Sorry about that.",
+		"-w.|Yep, solved now, thanks for the assistance.",
+		"+w.|No problem.",
+		"+b!|(I really like Garnet Thief, it's quite an interesting puzzle.)",
+		"+w,|Are you sure you've counted them correctly?",
+		"-w,|Yep. 2, 2 and 3 still.",
+		"+wX13|Damn, right, back to the drawing board...",
+		"+w,|Someone else was lying.",
+		"-w,|Who?",
+		"+wX13|... I don't know. Nevermind...",
+		"+w,|Mafia?",
+		"-w,|Nope, strike.",
+		"+wX18|Hmmmm...",
+		"+w,|Cartel?",
+		"-w,|Strike, not right.",
+		"+wX18|Hold on..."
+	};
+	
+	public static string[] AxodeauBafflingBox = {
+		"Baffed|1",
+		"+w.|*whistling to themselves*",
+		"+w.|Huh...",
+		"-w.|Hello, Edgework, I heard you can help me if I strike I don't know how, am I correct?",
+		"+w.|Yep, what module was it?",
+		"-w.|Baffling Box, do you know that one?",
+		"+w_0618|Um...|br|pq|Yeah|I don't know what you're talking about.",
+		"+w.|Yep, I think so. What indicators do you have?",
+		"-w.|3 lits and 3 unlits, so I used the X axis to read it.",
+		"+w.|First, tell me what you saw from straight on, from the left and from the top of the module, in that order.",
+		"-w.|Red Cube, Orange Sphere, Green Cylinder.",
+		"+w.|Ok, so what was the parity of the last SN digit?",
+		"-w.|Even, so the intersection of the table was Z, X, Y, which corresponds to Red, Orange, Green, which is 0...",
+		"+w_132124|Ok, wait there, I think I know what you did.|bbb|pbn|You mixed up your axes|You read the colours wrong|R, O, G is not 0",
+		"+w.|Ah, yep, classic mistake for this. Despite top sounding like it is referring to looking from the top of the module...",
+		"+w.|It is actually the straight on view that it is referring to, like in Hypercube, if you've done that one.",
+		"-w.|Ah, right, so it would actually be Green, Orange, Red... waiting for :5X... Yep, solved now. Thanks for that.",
+		"+w.|Glad to be of assistance!",
+		"+b!|To be fair, I was confused by that when I first did that module.",
+		"-w,|Oh, well, you can't help me then...",
+		"+b,|Wait, I do know that module, I almost know all of them, what was I talking about...",
+		"+bX00|*rewinds tape*",
+		"+w,|You read the colours wrong then.",
+		"-w,|Uhhh, no, I definitely got the colours right. Wait, how would you know if I read them wrong if you can't see the bomb?",
+		"+wX12|Good point, I don't know...",
+		"+w,|Are you sure ROG is 0, yeah?",
+		"-w,|Yep, most definitely.",
+		"+wX12|Woops, yes, it most definitely is. Let me think again..."
+	};
+	
+	public static string[] AxodeauRebootingMOS = {
+		"Derek|8",
+		"-w.|Edgework! Edgework! Need help!",
+		"+w.|Oh, uh, hello. What module?",
+		"-w.|Do you know Rebooting M-OS?",
+		"+w.|Yep, what have you already done?",
+		"-w.|Well, I got the status light press right, but the final answer wrong.",
+		"-w.|I've already double checked A, B and C, and am 110% sure on those.",
+		"+w.|Those being...",
+		"-w.|Oh yeah, A = 104, B = 658, C = 50",
+		"+w.|Okay, just to confirm, what base 3 number did you receive for value C?",
+		"-w.|121",
+		"+w.|Ok. What was your final result after altering it, and what equation did you use?",
+		"-w.|188, after adding 100 to -612 8 times, and, since the last digit of the serial was 5, I used equation 5, 3C - (A+B).",
+		"+w_171320|Ok, something has definitely gone wrong here...|bbb|pbn|121 doesn't refer to 50|You make any negative value positive first|The equation doesn't equal -612",
+		"+w.|Aha, there it is. You take the absolute value of the number first, before any modulo or adding.",
+		"-w.|Ah, yes, missed reading that bit. Just saw 'less than 100' and went forward without question.",
+		"+w.|Don't worry, easy mistake to make.",
+		"+b!|(Why does M-OS have such a complicated reboot method anyway?)",
+		"+w,|Is 121 definitely 50 in the table?",
+		"-w,|Yep, a thousand percent yes.",
+		"+wX12|Oh, ignore me, it is, my bad...",
+		"+w,|It doesn't equal -612.",
+		"-w,|3(50) = 150, 104+658 = 762, 150-762 = -612. What are you talking about?",
+		"+wX12|Nevermind, yes it does, hmmm, what else could've happened?"
+	};
+	
+	public static string[] UsernameChess = {
+		"Noma|6",
+		"-w_01|Greetings Mr. Edgework, do you have a moment?|w|p|What's up?",
+		"+w.|Indeed I do, what seems to be the issue?",
+		"-w.|I was busy practicing for a challenge bomb, and I can't seem to find out where I went wrong on Chess.",
+		"+b_0604|(Practicing Chess for a challenge bomb? Strange...)|br|pn|What's the read?|Which challenge bomb?",
+		"-w.|Ah, I'm doing Brain Power again. Why do you ask?",
+		"+w_06|Oh, just curious that's all.|w|p|What's the read?",
+		"-w.|D6, A5, C1, F6, E3, and E4 are my coordinates.",
+		"-w.|Serial Number was odd.",
+		"-w_0910|After putting the pieces on their respective spots, I see that there are no uncovered spots by the chess pieces.|ww|rb|What about Rule Seed?|That's all I need.",
+		"-w.|My apologies, almost forgot. Standard Rule Seed 1.",
+		"+w.|I see, thank you.",
+		"+b_1220|(No uncovered spots? Hmmm...)|br|kq|Can you provide more information?|I see the problem already.",
+		"-w.|Certainly. We both know that Position #4 is a Rook. So Rook takes F6.",
+		"-w_1417|E3 is a black square. Meaning a Rook takes E3, and a Bishop takes D6, Positions #5 and #2 respectively.|br|bp|One of your pieces so far are incorrect.|Wait and see.",
+		"-w,|Uhh... You sure there Mr. Edgework? Those three spots are usually the ones everybody never gets wrong.",
+		"+bX16|(Everyone except me I guess...)",
+		"-w.|Anyways, where was I? Oh yes.",
+		"-w.|The serial number is odd, so A5 - Position #2 is taken by a Rook.",
+		"-w.|Finally, since we have three Rooks, Position #3 is taken by a King, and #6 is taken by a Queen.",
+		"-w_242927|And this is where I come to you. Being stumped on where could this uncovered square lie, I look forward to hearing your reasoning.|bbb|ppp|Submit D2.|Submit B6.|Submit B4.",
+		"-w.|Oh do you?! What's the solution then?",
+		"+b_2223|(Do I really know what the answer is? I'm confident I do already, but should I ask for more information just in case?)|wr|pp|Can you provide edgework?|I have everything I need.",
+		"-w.|Sure, Odd Serial and Rule Seed 1. Let's see that intuition at work!",
+		"+w_242927|The answer here is to...|bbb|bnr|Submit D2.|Submit B6.|Submit B4.",
+		"-w,|D2? Isn't that spot claimed by the King in C1?",
+		"+b,|(Whoops, I didn't see that.)",
+		"-wX23|So much for that Edgework Intuition I was expecting...",
+		"-w,|B4? Sir, that's covered by a Bishop and Queen!",
+		"+bX23|(He's absolutely right, I should be more careful next time.)",
+		"-w.|B6? But the Rook at F6 captures it?",
+		"+w.|Although technically true, you missed one crucial detail, and I happen to know why.",
+		"-w.|What...? What detail?",
+		"+w.|Do you happen to use the interactive of the Chess manual?",
+		"-w.|Why yes. In fact I only used the interactive from when I first learned it.",
+		"+b.|(Exactly what I was hoping to hear.)",
+		"+w.|You have missed a very important detail all because you have only used an interactive manual.",
+		"-w_3937|An important detail missed? What is this detail then?|bb|kq|The chess pieces can block each other's movements.|The chess pieces are colorless.",
+		"-w,|What does the color of the pieces have to do with anything?",
+		"+wX36|I don't know either!",
+		"+w.|By having the pieces block each other, the Rook at F6 gets blocked by the bishop at D6.",
+		"+w.|Meaning, the only uncovered square is in fact B6.",
+		"-w.|And that's a solve! I'm a little embarrassed that that was the reason why I couldn't solve this Chess. Many, many thanks!",
+		"+w!|Always a pleasure."
+	};
+	
+/*	public static string[] MehBrainf = {
+		"Ded|1",
+		"+b_01|(What's the guy doing, laying on the floor like that?)|w|p|Uh...are you okay?",
+		"+w.|You okay there?",
+		"-w.|...",
+		"-w.|Mr. Edgework.",
+		"+w.|Yes?",
+		"-w.|Mr. Edgework!",
+		"+w.|Uh, yeah, that's me.",
+		"-w.|MR. EDGEWOOOOOOOOOOOOOORK!!!!!",
+		"+b_1209|(Did he hit his head or something?)|br|pb|Are you okay?|Walk away.",
+		"+b,|(I'd better just leave him be...)",
+		"+b,|(...)",
+		"+bX12|(Yeah, nope. Can't just leave a guy like that alone.)",
+		"+w.|What's the matter? Are you okay?",
+		"-w.|MR. EDGEWORK! PLEASE! I ALMOST SOLVED THAT NASTY CENTURION! BUT THEN I GOT THE WRONG ANSWER FOR THE FINAL BOSS AND- AND-",
+		"+b.|(...He started crying.)",
+		"-w.|Y-YOU GOTTA HELP ME MAN!!!!!!! I WASTED A R-REALLY REALLY G-GOOD SOLVE ON SOMETHING I DON'T UNDERSTAND AT ALL??????",
+		"-w_1917|PLEEEEEEEEEASE!!! I'M BEGGING YOU!!!!!!!|br|bn|I'll help you out.|Get Lost.",
+		"+w,|I don't have time for your gibberish. Get lost.",
+		"-wX19|BUT MR. EDGEWOOOOOOOOOOOOOOOOOOOOOOOOOOORK!!!",
+		"+w.|Alright, just firstly, calm down. I'll help you in discovering your mistake. Here, take a tissue and wipe your tears off.",
+		"-w.|...",
+		"+b.|(Guess he calmed down a bit...that's the first step done.)",
+		"+w.|Alright, now tell me. What is the boss that you had struck on?",
+		"-w.|B-b-brainf---",
+		"+b.|(Oh, but that's a fairly easy boss. How did he managed to screw up?)",
+		"+w.|Okay, so BrainF is it? Give me your workings.",
+		"-w.|S-so in the first f-few stages I have p-plus, minus, t-two right symbols, another m-minus, and a left symbol...",
+		"-w.|...w-which should r-result in the p-pointer getting in t-the s-slot 1, and to the right we have v-value o-one...",
+		"-w.|...t-then th-the first loop h-happened, wh-which only c-contains one r-right symbol a-and t-two plus symbols...",
+		"-w.|...a-as I have f-four batteries, I should l-loop it f-four plus o-one times, w-which is five, giving me f-five twos in a r-row...",
+		"-w.|...th-then a minus s-symbol, then another m-more complex l-loop w-with t-three right symbols, two p-pluses, a left s-symbol...",
+		"-w.|...three m-minuses, a-and another t-two right symbols...s-so I-I looped t-the same way as w-well, giving me 0, 0, 3, 2, 2, 2, ...",
+		"-w.|1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, ...",
+		"+w.|Alright, you can stop there. Pretty sure I figured it out where you get wrong.",
+		"-w_354047|Wh-wha? B-but where?|bbb|rqq|Before the first loop.|In the first loop.|In the second loop.",
+		"+w,|You did something wrong in the code before the first loop.",
+		"-w,|Wh-wha? I s-still d-don't understand...",
+		"+w,|Your minus code. How could you add one instead of subtracting from the slot?",
+		"-w,|Th-the zero case? Wh-where the s-slot is z-z-zero???",
+		"+bX34|(Oh yeah...)",
+		"+w,|There's something wrong when you execute the first loop.",
+		"-w,|B-but wh-where?",
+		"+w,|Well, five twos in a row seem odd. Why is that?",
+		"-w,|Be-because it's the r-result of the c-code??",
+		"+w,|Obviously, when you did something wrong. You see-",
+		"-w,|Mr. Edgework, there are only three symbols in the loop. Are you dumb? That's just plain ridiculous.",
+		"+bX34|(Ack...you're one to talk...how humiliating...)",
+		"+w.|You make a mistake while executing the second loop.",
+		"-w.|B-but wh-where?",
+		"+w.|The number of loops. You looped too many times.",
+		"-w.|I-I did n-not??? It's f-four batteries plus o-one l-loops, no?",
+		"+w.|It's true that you can loop five times, but keep in mind this is the maximum number you can only loop.",
+		"+w.|In fact, you should only execute the loop once, as at the end of the loop the pointer points to zero.",
+		"-w.|...I-I g-guess.",
+		"+w.|C'mon, everybody makes mistakes, there's no need to cry over such a small error. Just keep that in mind, and you should be okay.",
+		"-w!|...Thank you."
+	};*/
+	
+	public static string[] AxodeauInterpunct = {
+		"Q|9",
+		"+w.|Man, I really haven't had a lot of people come to me for he...",
+		"-w.|Are you busy Edgework?",
+		"+b.|(Spoke too soon...)",
+		"+w.|No, what do you need help with?",
+		"-w.|I'm normally consistent with Interpunct, but I just struck and don't know why.",
+		"+w_0616|Umm...|br|pp|I can help with that|You struck on Interpunct?!",
+		"+w.|Sure, I can help with that. What symbols were you given?",
+		"-w.|Speech Marks, with given symbols open square bracket, vertical bar and what I would call a fast forward symbol.",
+		"+w.|And what did you press?",
+		"-w.|The fast forward, but it said I was wrong.",
+		"+w_191122|Ummmm... Yes, I've got it. I know the mistake here...|bbb|pbn|The table doesn't wrap around|You've mixed up 2 symbols|You choose the one that isn't adjacent",
+		"+w.|Did you notice there are two different speech marks in the table?",
+		"-w.|Oh, my, there are 2 different speech marks, and yes, the other set look more like the ones I had on the module.",
+		"+w.|Ok, that sorts it out.",
+		"-w.|Thanks Edgework.",
+		"+w!|No problem.",
+		"-w,|Alright, there's no need to be like that Edgework! I know it's an easier module, but bear with me here!",
+		"+b,|(I don't know what came over me there, I'm not normally like that.)",
+		"+wX06|Sorry, bit of an overreaction from me there. I can only apologise...",
+		"+w,|The table doesn't wrap around.",
+		"-w,|Uhhh, that doesn't matter in this scenario though. Fast forward is quite literally adjacent to the speech marks I'm on about.",
+		"+wX10|Woops, of course that doesn't matter here...",
+		"+w,|You choose the one that isn't adjacent to the screen.",
+		"-w,|No, I've done this enough times to know that you have to pick the one that is adjacent.",
+		"+wX10|Nevermind, re-read it and yes, you do pick one that is adjacent. Let me have another look..."
+	};
+	
+	public static string[] UsernameCoordination = {
+		"Blade|3",
+		"-w.|Oh dear... there go all my papers.",
+		"+w.|Let me get those for you.",
+		"-w.|Ah, Mr. Edgework, it's an honor to be in your presence.",
+		"+b.|(It's always a good thing to know that my reputation has got me far around these parts.)",
+		"+w.|Are these all paper manuals?",
+		"-w.|You bet! I've been using these since I've first gotten into the EFM game!",
+		"+b.|(Isn't it faster to use the repository?)",
+		"-w_08|Well, anyways that's beside the point. I'm still in my own confusion right now.|w|p|What seems to be the issue?",
+		"-w_1209|I was trying to learn new mods and got an Assorted Arrangement strike.|br|pb|Let's see if I could help.|Do you have a logfile?",
+		"-w.|What's a logfile?",
+		"+b.|(With the paper manuals and the lack of knowledge of a logfile. He appears to be a little too old school.)",
+		"+b.|(I think I don't have a choice but to manually help him.)",
+		"+w.|What were your four items?",
+		"-w.|Yes, here you go.",
+		"+b.|(He handed me a paper. It's filled with notes and scribbles.)",
+		"+b.|(Come on, where is this read? Oh, there it is.)",
+		"+w.|\"Cup, Trumpet, Banana... Sus?\"",
+		"-w.|lol",
+		"+w.|...",
+		"-w.|...",
+		"+w.|...",
+		"-w.|...",
+		"+b_23|(He's one of THOSE people... let's help him as quickly as possible to avoid more of these jokes.)|b|p|Do you remember what you pressed?",
+		"-w.|That I do remember. I pressed the Top left Button 12 times, and the Bottom Right button 7 times.",
+		"-w.|I then submitted the module, to which I was presented with a strike.",
+		"-w.|If you have any doubts, I wrote it down here.",
+		"+b.|(He handed me another paper.)",
+		"+b.|(Upon further inspection it was the Assorted Arrangement manual, with writing that does match his presses.)",
+		"+w.|I see, it's all coming together.",
+		"-w.|What do you mean?",
+		"+b.|(Looking at this manual there doesn't seem to be any inconsistencies from what I remember of the digital variant.)",
+		"+b.|(However, something doesn't sit right. Especially since this person is a paper manual user.)",
+		"+b_393336|(The issue is clearly because...)|bbb|pbn|You pressed the wrong amount of times.|You pressed the wrong buttons.|You noted the wrong symbol.",
+		"-w,|I don't think I did, Mr. Edgework.",
+		"-w,|It clearly says that Top Left cycles the letter, Bottom Right cycles the number, and Top Right submits.",
+		"+bX32|(Indeed it does...)",
+		"-w,|You think that I misread a symbol?",
+		"+w,|I mean... I'm not saying that you did mistake a symbol...",
+		"+bX32|(On second thought, I am saying that they mistook a symbol...)",
+		"-w.|Wrong amount of times? How come?",
+		"+w.|Although this manual does explain it too, the updated repository manual states a much more explicit A1.",
+		"+w.|Which is in between the first 2x2 of items, not the top left corner.",
+		"+w.|You needed to press each button one less than what you pressed.",
+		"-w!|It all makes sense now! I should probably update my manuals sometime today. Thanks for the help!"
+	};
 }
