@@ -71,7 +71,7 @@ public class logicChessScript : MonoBehaviour {
         StatusLight.transform.localPosition = 0.03125f * Vector3.down;
         GetComponent<KMSelectable>().UpdateChildren();
         caseIx = UnityEngine.Random.Range(0,17);
-        caseIx = 11; //REMOVE THIS LINE
+        //caseIx = 11; //REMOVE THIS LINE
         ChooseCase(caseIx);
         opponentsName = caseData[0].Split('|')[0];
         chosenPerson = int.Parse(caseData[0].Split('|')[1]);
