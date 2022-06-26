@@ -2449,6 +2449,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c1a620f8fdbd5ec4d9a209467e79533a, type: 3}
   - {fileID: 21300000, guid: b905e9b7a60c55f4ab8ae3387f1a053b, type: 3}
   - {fileID: 21300000, guid: 67a41a54ad3980b4dbe301919150d03e, type: 3}
+  - {fileID: 21300000, guid: b05c3e1be0511fe4da111b395e6df8e8, type: 3}
   PieceSprites:
   - {fileID: 21300000, guid: 5e53daf8574f2ad43b21fc606b1dfb85, type: 3}
   - {fileID: 21300000, guid: 93503c20af7d4fe43b7da3c9ac243ecc, type: 3}
