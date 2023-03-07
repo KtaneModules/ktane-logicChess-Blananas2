@@ -793,7 +793,7 @@
 		"-w!|Thanks for that Edgework!"
 	};
 
-	public static string[] BlanResistors = {
+	/*public static string[] BlanResistors = {
 		"Latkovich|10",
 		"-w.|Hello there.",
 		"+w.|Hi how can I--",
@@ -836,4 +836,5 @@
 		"+w.|And a new LED too, there's no way that'll work.",
 		"+b!|(Or at least I assume so, I'm not an electronics expert...)"
 	};
+	*/
 }

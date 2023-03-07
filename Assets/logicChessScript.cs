@@ -70,7 +70,7 @@ public class logicChessScript : MonoBehaviour {
         AllOptButtons.SetActive(false);
         StatusLight.transform.localPosition = 0.03125f * Vector3.down;
         GetComponent<KMSelectable>().UpdateChildren();
-        caseIx = UnityEngine.Random.Range(0,20);
+        caseIx = UnityEngine.Random.Range(0,19);
         //caseIx = 19; //REMOVE THIS LINE
         ChooseCase(caseIx);
         opponentsName = caseData[0].Split('|')[0];
@@ -102,7 +102,6 @@ public class logicChessScript : MonoBehaviour {
             case 16: caseData = logicChessData.UsernameCoordination; break;
             case 17: caseData = logicChessData.AxodeauPasswordGenerator; break;
             case 18: caseData = logicChessData.SamfundevCheepCheckout; break;
-            case 19: caseData = logicChessData.BlanResistors; break;
         }
         Debug.LogFormat("<Logic Chess #{0}> caseIx: {1}", moduleId, c);
     }
